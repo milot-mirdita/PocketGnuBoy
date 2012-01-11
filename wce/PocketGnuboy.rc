@@ -1,0 +1,384 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""newres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON                    "gameboy.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDM_MENU RCDATA 
+BEGIN
+    0x0066, 0x0002, 0xfffe, 0x9c44, 0x0004, 0x0018, 0x9c44, 0x9c44, 0x0000, 
+    0xfffe, 0x9c5d, 0x0004, 0x0018, 0x9c5d, 0x9c5d, 0x0001
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_MENU MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Exit",                        IDM_FILE_EXIT
+        MENUITEM SEPARATOR
+        MENUITEM "Reset",                       IDM_FILE_RESET
+        MENUITEM "Resume",                      IDM_FILE_RESUME
+        MENUITEM SEPARATOR
+        MENUITEM "Close ROM",                   IDM_FILE_CLOSE
+        MENUITEM "Open ROM",                    IDM_FILE_OPEN
+        MENUITEM SEPARATOR
+        POPUP "State Slot"
+        BEGIN
+            MENUITEM "# 0",                         IDM_FILE_STATE0
+            MENUITEM "# 1",                         IDM_FILE_STATE1
+            MENUITEM "# 2",                         IDM_FILE_STATE2
+            MENUITEM "# 3",                         IDM_FILE_STATE3
+            MENUITEM "# 4",                         IDM_FILE_STATE4
+            MENUITEM "# 5",                         IDM_FILE_STATE5
+            MENUITEM "# 6",                         IDM_FILE_STATE6
+            MENUITEM "# 7",                         IDM_FILE_STATE7
+            MENUITEM "# 8",                         IDM_FILE_STATE8
+            MENUITEM "# 9",                         IDM_FILE_STATE9
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Load State",                  IDM_FILE_STATE_LOAD
+        MENUITEM "Save State",                  IDM_FILE_STATE_SAVE
+    END
+    POPUP "Control"
+    BEGIN
+        MENUITEM "About...",                    IDM_HELP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Settings...",                 IDM_CTRL_PREFERENCES
+        MENUITEM "Controls...",                 IDM_CTRL_CONTROLLERS
+        POPUP "Audio"
+        BEGIN
+            MENUITEM "Enable",                      IDM_CTRL_AUDIO_ENABLE
+            MENUITEM SEPARATOR
+            MENUITEM "11kHz",                       IDM_CTRL_AUDIO_11K
+            MENUITEM "22kHz",                       IDM_CTRL_AUDIO_22K
+            MENUITEM "44kHz",                       IDM_CTRL_AUDIO_44K
+            MENUITEM SEPARATOR
+            MENUITEM "Mono",                        IDM_CTRL_AUDIO_MONO
+            MENUITEM "Stereo",                      IDM_CTRL_AUDIO_STEREO
+            MENUITEM SEPARATOR
+            MENUITEM "8bits",                       IDM_CTRL_AUDIO_8BITS
+            MENUITEM "16bits",                      IDM_CTRL_AUDIO_16BITS
+            MENUITEM SEPARATOR
+            POPUP "Audio Buffers"
+            BEGIN
+                MENUITEM "4",                           IDM_CTRL_AUDIO_BUF4
+                MENUITEM "8",                           IDM_CTRL_AUDIO_BUF8
+                MENUITEM "12",                          IDM_CTRL_AUDIO_BUF12
+                MENUITEM "16",                          IDM_CTRL_AUDIO_BUF16
+                MENUITEM "24",                          IDM_CTRL_AUDIO_BUF24
+                MENUITEM "32",                          IDM_CTRL_AUDIO_BUF32
+            END
+        END
+        POPUP "Screen"
+        BEGIN
+            MENUITEM "160 x 144",                   IDM_CTRL_SCREEN_160_144
+            MENUITEM "240 x 216",                   IDM_CTRL_SCREEN_240_216
+            MENUITEM "240 x 216 Half Antialiasing", IDM_CTRL_SCREEN_240_216H
+            MENUITEM "240 x 216 Antialiasing",      IDM_CTRL_SCREEN_240_216A
+            MENUITEM SEPARATOR
+            POPUP "Frame Skip"
+            BEGIN
+                MENUITEM "Auto",                        IDM_CTRL_FRAMESKIP_AUTO
+                MENUITEM SEPARATOR
+                MENUITEM "0 (60fps)",                   IDM_CTRL_FRAMESKIP0
+                MENUITEM "1 (30fps)",                   IDM_CTRL_FRAMESKIP1
+                MENUITEM "2 (20fps)",                   IDM_CTRL_FRAMESKIP2
+                MENUITEM "3 (15fps)",                   IDM_CTRL_FRAMESKIP3
+                MENUITEM "4 (12fps)",                   IDM_CTRL_FRAMESKIP4
+                MENUITEM "5 (10fps)",                   IDM_CTRL_FRAMESKIP5
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Virtual Pad",                 IDM_CTRL_VPAD
+        MENUITEM SEPARATOR
+        MENUITEM "Turbo B",                     IDM_CTRL_TURBOB
+        MENUITEM "Turbo A",                     IDM_CTRL_TURBOA
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 144, 71
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+EXSTYLE 0x80000000L
+CAPTION "About PocketGnuboy"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_MAIN,IDC_STATIC,11,17,20,20
+    LTEXT           "based on gnuboy 1.0.3",IDC_STATIC,40,35,95,8
+    LTEXT           "date",IDC_STATIC_DATE,40,50,95,8
+    LTEXT           "PocketGnuboy 1.3",IDC_STATIC,40,20,95,8,SS_NOPREFIX
+END
+
+IDD_CONTROLLERS DIALOG  0, 0, 138, 179
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION
+CAPTION "Controls"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "A : ",IDC_STATIC,9,9,25,8
+    LTEXT           "0xFF",IDC_STATIC_KEY_A,42,9,27,8
+    PUSHBUTTON      "...",IDC_A,73,8,25,12
+    PUSHBUTTON      "Del",IDC_DEL_A,104,8,25,12
+    LTEXT           "B : ",IDC_STATIC,9,25,25,8
+    LTEXT           "0xFF",IDC_STATIC_KEY_B,42,25,27,8
+    PUSHBUTTON      "...",IDC_B,73,24,25,12
+    PUSHBUTTON      "Del",IDC_DEL_B,104,24,25,12
+    LTEXT           "Select : ",IDC_STATIC,9,41,25,8
+    LTEXT           "0xFF",IDC_STATIC_KEY_SELECT,42,41,27,8
+    PUSHBUTTON      "...",IDC_SELECT,73,40,25,12
+    PUSHBUTTON      "Del",IDC_DEL_SELECT,104,40,25,12
+    LTEXT           "Start : ",IDC_STATIC,9,57,25,8
+    LTEXT           "0xFF",IDC_STATIC_KEY_START,42,57,27,8
+    PUSHBUTTON      "...",IDC_START,73,56,25,12
+    PUSHBUTTON      "Del",IDC_DEL_START,104,56,25,12
+    LTEXT           "Up : ",IDC_STATIC,9,73,25,8
+    LTEXT           "0xFF",IDC_STATIC_KEY_UP,42,73,27,8
+    PUSHBUTTON      "...",IDC_UP,73,72,25,12
+    PUSHBUTTON      "Del",IDC_DEL_UP,104,72,25,12
+    LTEXT           "Down : ",IDC_STATIC,9,89,25,8
+    LTEXT           "0xFF",IDC_STATIC_KEY_DOWN,42,89,27,8
+    PUSHBUTTON      "...",IDC_DOWN,73,88,25,12
+    PUSHBUTTON      "Del",IDC_DEL_DOWN,104,88,25,12
+    LTEXT           "Left : ",IDC_STATIC,9,105,25,8
+    LTEXT           "0xFF",IDC_STATIC_KEY_LEFT,42,105,27,8
+    PUSHBUTTON      "...",IDC_LEFT,73,104,25,12
+    PUSHBUTTON      "Del",IDC_DEL_LEFT,104,104,25,12
+    LTEXT           "Right : ",IDC_STATIC,9,121,25,8
+    LTEXT           "0xFF",IDC_STATIC_KEY_RIGHT,42,121,27,8
+    PUSHBUTTON      "...",IDC_RIGHT,73,120,25,12
+    PUSHBUTTON      "Del",IDC_DEL_RIGHT,104,120,25,12
+    LTEXT           "Escape : ",IDC_STATIC,9,137,25,8
+    LTEXT           "0xFF",IDC_STATIC_KEY_ESCAPE,42,137,27,8
+    PUSHBUTTON      "...",IDC_ESCAPE,73,136,25,12
+    PUSHBUTTON      "Del",IDC_DEL_ESCAPE,104,136,25,12
+END
+
+IDD_KEYPRESS DIALOG  0, 0, 65, 52
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 9, "Tahoma"
+BEGIN
+    LTEXT           "Press key",IDC_STATIC,14,23,37,8
+END
+
+IDD_PREFERENCES DIALOG  0, 0, 152, 178
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE 0x80000000L
+CAPTION "Settings"
+FONT 8, "Tahoma"
+BEGIN
+    PUSHBUTTON      "Associate .GB files with Gnuboy",IDC_ASSOCIATE,10,5,108,14
+    PUSHBUTTON      "Undo",IDC_UNDO,120,5,25,14
+    CONTROL         "relative to ROM directory",IDC_RADIO_SRAM_ROMDIRECTORY,
+                    "Button",BS_AUTORADIOBUTTON | BS_MULTILINE | WS_GROUP,16,38,121,10
+    CONTROL         "relative to",IDC_RADIO_SRAM_DIRECTORY,"Button",BS_AUTORADIOBUTTON,16,52,121,10
+    EDITTEXT        IDC_EDIT_SRAM,16,65,121,12,ES_AUTOHSCROLL
+    GROUPBOX        "Save Files Directory",IDC_STATIC,10,25,133,57
+    CONTROL         "Speed throttling (59.73 Hz)",IDC_CHECK_THROTTLING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,90,125,10
+    CONTROL         "High contrast",IDC_CHECK_CONTRAST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,105,60,10
+    CONTROL         "Show FPS",IDC_CHECK_SHOWFPS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,105,60,10
+    CONTROL         "Draw screen on pause",IDC_CHECK_DRAWSCREEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,120,125,10
+    CONTROL         "Draw with DirectDraw",IDC_CHECK_DDRAW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,135,125,10
+    CONTROL         "Use gsgetfile.dll",IDC_CHECK_GSGETFILE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,150,125,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_POCKETGNUBOY ACCELERATORS 
+BEGIN
+    "Q",            IDOK,                   VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_CONTROLLERS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_KEYPRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 60
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PREFERENCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 146
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR  16, 16
+BEGIN
+    BUTTON      IDM_FILE_OPEN
+    BUTTON      IDM_CTRL_AUDIO_ENABLE
+    BUTTON      IDM_CTRL_AUDIO_ENABLE
+    BUTTON      IDM_FILE_STATE_SAVE
+    BUTTON      IDM_FILE_STATE_LOAD
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP                  "toolbar.bmp"
+IDB_VPAD                BITMAP                  "vpad.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "PocketGnuboy"
+    IDC_POCKETGNUBOY        "POCKETGNUBOY"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_FILE                "File"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_DISPLAY             "Control"
+    IDM_CONTROL             "Control"
+END
+
+STRINGTABLE 
+BEGIN
+    IDM_HELP                "Help"
+    IDS_MSG_PAUSE           "Game paused. Tap screen to resume."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ROM_TYPENAME        "Gameboy ROM"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

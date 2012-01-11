@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "PocketGnuboy", "PocketGnuboy\PocketGnuboy.vddproj", "{9FDD04A1-8943-4383-8BCD-73125D75E89E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FDD04A1-8943-4383-8BCD-73125D75E89E}.Debug|Default.ActiveCfg = Debug
+		{9FDD04A1-8943-4383-8BCD-73125D75E89E}.Debug|Default.Build.0 = Debug
+		{9FDD04A1-8943-4383-8BCD-73125D75E89E}.Release|Default.ActiveCfg = Release
+		{9FDD04A1-8943-4383-8BCD-73125D75E89E}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
